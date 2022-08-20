@@ -11,17 +11,15 @@ if __name__ == '__main__':
     menor = min(valores)
     valores.remove(menor)
     while menor in valores:
-        valores.remove(menor)    
+        valores.remove(menor)
     for nota2 in valores:
         if nota2 == min(valores):
             for chave, valor in dicio.items():
                 if valor == nota2:
                     if chave not in chaves:
                         chaves.append(chave)
-                    else: 
+                    else:
                         break
     chaves.sort()
     for x in chaves:
         print(x)
-  
-    
